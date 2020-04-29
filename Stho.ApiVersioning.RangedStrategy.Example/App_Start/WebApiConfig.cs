@@ -1,10 +1,10 @@
 ﻿using System.Web.Http;
 using System.Web.Http.Routing;
-using CustomAttributeExample.Mvc.Versioning;
 using Microsoft.Web.Http;
 using Microsoft.Web.Http.Routing;
+using Stho.ApiVersioning.RangedStrategy.Conventions;
 
-namespace CustomAttributeExample
+namespace Stho.ApiVersioning.RangedStrategy.Example
 {
     public static class WebApiConfig
     {

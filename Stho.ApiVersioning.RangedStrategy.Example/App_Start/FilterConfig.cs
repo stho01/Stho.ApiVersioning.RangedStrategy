@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace CustomAttributeExample
+namespace Stho.ApiVersioning.RangedStrategy.Example
 {
     public class FilterConfig
     {

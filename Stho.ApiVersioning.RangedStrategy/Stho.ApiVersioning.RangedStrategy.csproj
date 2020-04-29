@@ -65,6 +65,7 @@
     <Compile Include="Annotations\VersionHolderAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include=".nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup />

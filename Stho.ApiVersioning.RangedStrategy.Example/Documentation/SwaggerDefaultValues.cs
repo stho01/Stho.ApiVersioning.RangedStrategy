@@ -2,7 +2,7 @@
 using System.Web.Http.Description;
 using Swashbuckle.Swagger;
 
-namespace CustomAttributeExample.Documentation
+namespace Stho.ApiVersioning.RangedStrategy.Example.Documentation
 {
     /// <summary>
     /// Represents the Swagger/Swashbuckle operation filter used to provide default values.

@@ -1,10 +1,10 @@
 using System.Web.Http;
 using System.Web.Http.Description;
-using CustomAttributeExample.Documentation;
 using Microsoft.Web.Http.Description;
+using Stho.ApiVersioning.RangedStrategy.Example.Documentation;
 using Swashbuckle.Application;
 
-namespace CustomAttributeExample
+namespace Stho.ApiVersioning.RangedStrategy.Example
 {
     public static class SwaggerConfig
     {

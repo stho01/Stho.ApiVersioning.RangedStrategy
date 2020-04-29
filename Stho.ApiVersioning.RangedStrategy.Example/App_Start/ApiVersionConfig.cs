@@ -1,7 +1,6 @@
-﻿using CustomAttributeExample.Mvc.Versioning;
-using Microsoft.Web.Http;
+﻿using Microsoft.Web.Http;
 
-namespace CustomAttributeExample
+namespace Stho.ApiVersioning.RangedStrategy.Example
 {
     public static class ApiVersionConfig
     {

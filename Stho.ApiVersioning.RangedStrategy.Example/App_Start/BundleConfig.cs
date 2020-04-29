@@ -1,6 +1,6 @@
 ﻿using System.Web.Optimization;
 
-namespace CustomAttributeExample
+namespace Stho.ApiVersioning.RangedStrategy.Example
 {
     public class BundleConfig
     {

@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
-using CustomAttributeExample.Mvc.Routing;
 using Stho.ApiVersioning.RangedStrategy.Annotations;
+using Stho.ApiVersioning.RangedStrategy.Example.Mvc.Routing;
 
-namespace CustomAttributeExample.Controllers.V2_0
+namespace Stho.ApiVersioning.RangedStrategy.Example.Controllers.V2_0
 {
     [VersioningRoutePrefix("values")]
     [IntroducedInApiVersion(2, 0)]

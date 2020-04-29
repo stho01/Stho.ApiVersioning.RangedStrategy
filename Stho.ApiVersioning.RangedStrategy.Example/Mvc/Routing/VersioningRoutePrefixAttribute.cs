@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace CustomAttributeExample.Mvc.Routing
+namespace Stho.ApiVersioning.RangedStrategy.Example.Mvc.Routing
 {
     public class VersioningRoutePrefixAttribute : RoutePrefixAttribute
     {
