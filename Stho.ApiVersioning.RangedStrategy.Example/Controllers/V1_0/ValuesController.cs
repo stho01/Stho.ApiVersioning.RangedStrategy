@@ -18,6 +18,14 @@ namespace Stho.ApiVersioning.RangedStrategy.Example.Controllers.V1_0
             yield return "v1 - item #2";
         }
 
+        [Route("overwrite")]
+        [IntroducedInApiVersion(1)]
+        [RemovedInApiVersion(2)]
+        public string GetOverwriteEndpoint()
+        {
+            return "v1";
+        }
+
         [Route("RemovedInV2/{index:int}")]
         [IntroducedInApiVersion(1)]
         [RemovedInApiVersion(2)]

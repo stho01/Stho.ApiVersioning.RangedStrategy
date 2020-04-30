@@ -9,13 +9,20 @@ namespace Stho.ApiVersioning.RangedStrategy.Example.Controllers.V2_0
     [IntroducedInApiVersion(2, 0)]
     public class ValuesController : ApiController
     {
-        //[Route("all")]
-        //[IntroducedInApiVersion(2,0)]
-        //public IEnumerable<string> GetAllValues()
-        //{
-        //    yield return "v2 - item #1";
-        //    yield return "v2 - item #2";
-        //}
+        [Route("all")]
+        [IntroducedInApiVersion(2, 0)]
+        public IEnumerable<string> GetAllValues()
+        {
+            yield return "v2 - item #1";
+            yield return "v2 - item #2";
+        }
+
+        [Route("overwrite")]
+        [IntroducedInApiVersion(2)]
+        public string GetOverwriteEndpoint()
+        {
+            return "v2";
+        }
 
         [Route("NewFeature")]
         [IntroducedInApiVersion(2, 1)]
