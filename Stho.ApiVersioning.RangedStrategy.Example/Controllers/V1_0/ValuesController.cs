@@ -10,14 +10,16 @@ namespace Stho.ApiVersioning.RangedStrategy.Example.Controllers.V1_0
     [IntroducedInApiVersion(1)]
     public class ValuesController : ApiController
     {
-        [Route]
+        // api/values
         [IntroducedInApiVersion(1)]
+        [RemovedInApiVersion(2)]
         public IEnumerable<string> Get()
         {
             yield return "v1 - item #1";
             yield return "v1 - item #2";
         }
 
+        // api/v1/overwrite
         [Route("overwrite")]
         [IntroducedInApiVersion(1)]
         [RemovedInApiVersion(2)]
@@ -26,6 +28,7 @@ namespace Stho.ApiVersioning.RangedStrategy.Example.Controllers.V1_0
             return "v1";
         }
 
+        // api/v1/RemovedInV2/{index:int}
         [Route("RemovedInV2/{index:int}")]
         [IntroducedInApiVersion(1)]
         [RemovedInApiVersion(2)]
@@ -33,8 +36,8 @@ namespace Stho.ApiVersioning.RangedStrategy.Example.Controllers.V1_0
         {
             switch (index)
             {
-                case 1: return $"v1 - item #1";
-                case 2: return $"v1 - item #2";
+                case 1: return "v1 - item #1";
+                case 2: return "v1 - item #2";
 
                 default: throw new ArgumentOutOfRangeException();
             }
