@@ -44,8 +44,8 @@ namespace Stho.ApiVersioning.RangedStrategy.Conventions
                 var introduced = action.GetCustomAttributes<IntroducedInApiVersionAttribute>().SingleOrDefault() ?? state.ControllerIntroduced;
                 var removed = action.GetCustomAttributes<RemovedInApiVersionAttribute>().SingleOrDefault() ?? state.ControllerRemoved;
                 
-                if (introduced.Version > state.ControllerIntroduced.Version)
-                    continue;
+                //if (introduced.Version > state.ControllerIntroduced.Version)
+                //    continue;
 
                 var versions = _versions.Where(x => x >= introduced.Version);
                 if (removed != null)

@@ -18,7 +18,6 @@ namespace Stho.ApiVersioning.RangedStrategy.Example
                 // included in the docs for a given API version. Like "SingleApiVersion", each call to "Version"
                 // returns an "Info" builder so you can provide additional metadata per API version.
                 swagger.MultipleApiVersions(VersionSupportResolver, builder => BuildInfo(builder, apiExplorer));
-
                 swagger.OperationFilter<SwaggerDefaultValues>();
             })
             .EnableSwaggerUi(swaggerUi => swaggerUi.EnableDiscoveryUrlSelector());

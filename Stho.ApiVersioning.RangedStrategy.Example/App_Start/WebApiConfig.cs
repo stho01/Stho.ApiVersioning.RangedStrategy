@@ -18,6 +18,7 @@ namespace Stho.ApiVersioning.RangedStrategy.Example
                 }
             };
             config.MapHttpAttributeRoutes(constraintResolver);
+
             // Web API configuration and services
             config.AddApiVersioning(o =>
             {
@@ -28,17 +29,10 @@ namespace Stho.ApiVersioning.RangedStrategy.Example
             });
 
             // Web API routes
-
             config.Routes.MapHttpRoute(
                 "VersionedQueryString",
                 "api/{controller}",
                 defaults: null);
-
-            //config.Routes.MapHttpRoute(
-            //    "VersionedUrl",
-            //    "api/v{apiVersion}/{controller}",
-            //    defaults: null,
-            //    constraints: new { apiVersion = new ApiVersionRouteConstraint() });
         }
     }
 }

@@ -12,14 +12,13 @@ namespace Stho.ApiVersioning.RangedStrategy.Example.Controllers.V1_0
     {
         [Route]
         [IntroducedInApiVersion(1)]
-        [RemovedInApiVersion(2)]
         public IEnumerable<string> Get()
         {
             yield return "v1 - item #1";
             yield return "v1 - item #2";
         }
 
-        [Route("{index:int}")]
+        [Route("RemovedInV2/{index:int}")]
         [IntroducedInApiVersion(1)]
         [RemovedInApiVersion(2)]
         public string GetByIndex(int index)
@@ -31,7 +30,6 @@ namespace Stho.ApiVersioning.RangedStrategy.Example.Controllers.V1_0
 
                 default: throw new ArgumentOutOfRangeException();
             }
-            
         }
     }
 }
