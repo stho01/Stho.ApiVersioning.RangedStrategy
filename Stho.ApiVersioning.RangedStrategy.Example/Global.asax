@@ -1,1 +1,1 @@
-﻿<%@ Application Codebehind="Global.asax.cs" Inherits="CustomAttributeExample.WebApiApplication" Language="C#" %>
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="Stho.ApiVersioning.RangedStrategy.Example.WebApiApplication" Language="C#" %>
